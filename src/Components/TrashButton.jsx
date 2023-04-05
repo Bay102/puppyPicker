@@ -9,7 +9,7 @@ export const TrashButton = ({ onClick, disabled = false }) => (
       width: 40,
       border: 0,
       opacity: disabled ? 0.5 : 1,
-      cursor: disabled ? "not-allowed" : "pointer",
+      // cursor: disabled ? "not-allowed" : "pointer",
     }}
     onClick={() => {
       if (!disabled) {
