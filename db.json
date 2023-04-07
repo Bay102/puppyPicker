@@ -1,67 +1,123 @@
 {
   "dogs": [
     {
-      "name": "Sidney",
-      "image": "/src/assets/chihuahua.avif",
-      "description": "absentmindedly capacitor calculating Wooden XML auxiliary transitional Shanahan",
+      "name": "Lorine",
+      "image": "/src/assets/boxer.png",
+      "description": "dolorum Unbranded Waldorf alongside South Flat Tools orange",
+      "isFavorite": false,
+      "id": 3
+    },
+    {
+      "name": "Maurice",
+      "image": "/src/assets/cowardly.png",
+      "description": "bandwidth er Analyst envisioneer Guiana",
+      "isFavorite": false,
+      "id": 4
+    },
+    {
+      "name": "Lucas",
+      "image": "/src/assets/cowardly.png",
+      "description": "synergistic invoice Convertible Internal Lead",
       "isFavorite": false,
       "id": 5
     },
     {
-      "name": "Erwin",
-      "image": "/src/assets/chihuahua.avif",
-      "description": "Future joule olive orchid Southwest",
+      "name": "Dean",
+      "image": "/src/assets/boxer.png",
+      "description": "South Jewelery insurance Northwest Jazz",
+      "isFavorite": false,
+      "id": 6
+    },
+    {
+      "name": "Mariam",
+      "image": "/src/assets/boxer.png",
+      "description": "web Kenton Bugatti Engineer Hop OCR Lamborghini Road",
+      "isFavorite": false,
+      "id": 7
+    },
+    {
+      "name": "Hallie",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "neural Developer purple array Electric",
+      "isFavorite": true,
+      "id": 8
+    },
+    {
+      "name": "Stanton",
+      "image": "/src/assets/dalmation.png",
+      "description": "quantify website Home Green Hatchback incubate Hybrid",
+      "isFavorite": false,
+      "id": 9
+    },
+    {
+      "name": "Orlando",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "Account male beneath pariatur Streamlined",
+      "isFavorite": true,
+      "id": 10
+    },
+    {
+      "name": "Orville",
+      "image": "/src/assets/boxer.png",
+      "description": "Zambia Electronic Metrics Southeast Supervisor",
       "isFavorite": false,
       "id": 11
     },
     {
-      "name": "Matilde",
+      "name": "Damian",
       "image": "/src/assets/cowardly.png",
-      "description": "mobile panel Maserati weber recapitulate Plastic navigating Profound",
+      "description": "Bedfordshire Transexual Southwest Alabama keen leverage communities",
       "isFavorite": false,
       "id": 12
     },
     {
-      "name": "Collin",
-      "image": "/src/assets/chihuahua.avif",
-      "description": "female Implementation scalable Car female",
+      "name": "Kaya",
+      "image": "/src/assets/boxer.png",
+      "description": "bandwidth Somalia gah panel bypass",
       "isFavorite": false,
       "id": 13
     },
     {
-      "name": "Mariam",
-      "image": "/src/assets/corgi.png",
-      "description": "iterate Account lumen DeKalb Analyst East HEX Executive",
+      "name": "Luciano",
+      "image": "/src/assets/boxer.png",
+      "description": "South Movies Diesel Macao Practical Bedfordshire generating itaque",
       "isFavorite": true,
       "id": 14
     },
     {
-      "name": "Leone",
-      "image": "/src/assets/cowardly.png",
-      "description": "invoice BMW optical Sudan male North programming",
-      "isFavorite": true,
+      "name": "Ernestine",
+      "image": "/src/assets/corgi.png",
+      "description": "meh Steel indexing Tesla supposing earum Bicycle",
+      "isFavorite": false,
       "id": 15
     },
     {
-      "name": "Else",
-      "image": "/src/assets/cowardly.png",
-      "description": "Bedfordshire down Southwest visionary North",
+      "name": "Zion",
+      "image": "/src/assets/boxer.png",
+      "description": "Card lest invoice strategize ASCII",
       "isFavorite": false,
       "id": 16
     },
     {
-      "name": "Chauncey",
-      "image": "/src/assets/blue-heeler.png",
-      "description": "bah Sudanese parsing Ferrari provided",
+      "name": "Alexie",
+      "image": "/src/assets/chihuahua.avif",
+      "description": "Personal Quality District Gleichner nicely female dolor Manganese",
       "isFavorite": true,
       "id": 17
     },
     {
-      "name": "Ally",
-      "image": "/src/assets/dalmation.png",
-      "description": "system magenta magenta Diesel Program Corporate Trans",
+      "name": "Mayra",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "female Clothing Missouri adept Taunton blue transmitter Strontium",
       "isFavorite": false,
       "id": 18
+    },
+    {
+      "name": "Reginald",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "strategy up sievert East Wooden Advanced joshingly HDD",
+      "isFavorite": false,
+      "id": 19
     }
   ]
 }

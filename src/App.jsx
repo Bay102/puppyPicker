@@ -8,30 +8,54 @@ import './fonts/RubikBubbles-Regular.ttf';
 function App() {
   const [dogs, setDogs] = useState([]);
 
-  useEffect(() => {
-    fetch('http://localhost:3000/dogs', {
-      method: 'GET',
-    })
-      .then((response) => response.json())
-      .then((data) => setDogs(data))
-      .catch((error) => console.log(error));
-  }, []);
-
-  //insert refresh dog function
   const refreshDogs = () => {
     fetch('http://localhost:3000/dogs', {
       method: 'GET',
     })
       .then((response) => response.json())
       .then((updatedDogs) => setDogs(updatedDogs))
-      .catch((error) => console.log(error));
+      .catch(console.error);
   };
 
-  //insert Favorite dog function
-  // Patch request to update isFavorite
+  useEffect(() => {
+    refreshDogs();
+  }, []);
 
-  //insert Un-Favorite dog function
-  // Patch request to update isFavorite
+  const favoriteDog = (dogId) => {
+    fetch(`http://localhost:3000/dogs/${dogId}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        isFavorite: true,
+      }),
+    })
+      .then((response) => {
+        if (response.ok) {
+          refreshDogs();
+        }
+      })
+      .catch(console.error);
+  };
+
+  const unFavoriteDog = (dogId) => {
+    fetch(`http://localhost:3000/dogs/${dogId}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        isFavorite: false,
+      }),
+    })
+      .then((response) => {
+        if (response.ok) {
+          refreshDogs();
+        }
+      })
+      .catch((error) => console.log(error));
+  };
 
   //insert create dog function
   // post request to create a dog
@@ -41,11 +65,18 @@ function App() {
       <header>
         <h1>pup-e-picker</h1>
       </header>
-      <Section label={'Dogs: '}>
+      <Section
+        dogs={dogs}
+        setDogs={setDogs}
+        refreshDogs={refreshDogs}
+        label={'Dogs: '}
+      >
         <Dogs
           dogs={dogs}
           setDogs={setDogs}
           refreshDogs={refreshDogs}
+          favoriteDog={favoriteDog}
+          unFavoriteDog={unFavoriteDog}
           label={'All Dogs'}
         />
         {/* <CreateDogForm /> */}

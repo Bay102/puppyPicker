@@ -3,33 +3,35 @@ import { FavoriteButton } from './FavoriteButton';
 import { TrashButton } from './TrashButton';
 import { UnfavoriteButton } from './UnfavoriteButton';
 
-export const DogCard = ({ dog: { name, image, description, id, isFavorite }, refreshDogs }) => {
+export const DogCard = ({
+  dog: { name, image, description, id, isFavorite },
+  refreshDogs,
+  favoriteDog,
+  unFavoriteDog,
+}) => {
+  
 
-
-  //insert delete dog function
   const deleteDog = () => {
     fetch(`http://localhost:3000/dogs/${id}`, {
       method: 'DELETE',
     })
       .then((response) => {
         if (response.ok) {
-          refreshDogs()
+          refreshDogs();
         } else {
           console.log('Failed to delete item');
         }
       })
-      .catch((error) => {
-        console.error('Error deleting item', error);
-      });
+      .catch(console.error)
   };
 
   return (
     <div className="dog-card">
       {/* Choose which button to show depending on if dog is a favorite */}
       {isFavorite ? (
-        <UnfavoriteButton onClick={() => {}} />
+        <UnfavoriteButton onClick={() => unFavoriteDog(id)} />
       ) : (
-        <FavoriteButton onClick={() => {}} />
+        <FavoriteButton onClick={() => favoriteDog(id)} />
       )}
 
       {/* Use this button to delete a puppy :( */}

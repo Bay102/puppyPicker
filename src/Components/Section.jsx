@@ -1,6 +1,37 @@
-export const Section = ({ label, children }) => {
-  const favoriteDogCount = 1;
-  const unfavoriteDogCount = 2;
+import { useState } from "react";
+
+export const Section = ({dogs, setDogs, label, children }) => { 
+
+  let favoriteDogCount = dogs.filter(dog => dog.isFavorite).length;
+
+  let notFavoriteDogCount = dogs.filter(dog => !dog.isFavorite).length;
+
+  // const [faves, setFaves] = useState(favoriteDogCount);
+  // const [notFaves, setNotFaves] = useState(notFavoriteDogCount);
+
+  const showFavorites = () => {
+      setDogs(dogs.filter(dog => dog.isFavorite))
+
+    // fetch('http://localhost:3000/dogs', {
+    //   method: 'GET',
+    // })
+    //   .then((response) => response.json())
+    //   .then((updatedDogs) => setDogs(updatedDogs.filter((dog) => dog.isFavorite)))
+    //   .catch(console.error);
+  };
+
+  const showNotFavorites = () => {
+    setDogs(dogs.filter(dog => !dog.isFavorite))
+    // fetch('http://localhost:3000/dogs', {
+    //   method: 'GET',
+    // })
+    //   .then((response) => response.json())
+    //   .then((dogData)=> setDogs(dogData.filter((dog) => !dog.isFavorite)))
+    //   .catch(console.error);
+  };
+
+
+
   return (
     <section>
       <div className="container-header">
@@ -8,12 +39,14 @@ export const Section = ({ label, children }) => {
         <div className="selectors">
           {/* Add the class 'active' to any selector in order to make it's color change */}
           {/* This should display the favorite count */}
-          <div className={`selector active`}>
+          <div onClick={showFavorites} className={`selector active`}>
             favorites( {favoriteDogCount} )
           </div>
 
           {/* This should display the un-favorite count */}
-          <div className={`selector`}>un-favorite ( {unfavoriteDogCount} )</div>
+          <div onClick={showNotFavorites} className={`selector`}>
+            un-favorite ({notFavoriteDogCount})
+          </div>
           <div className={`selector`}>create dog</div>
         </div>
       </div>
