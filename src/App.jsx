@@ -7,19 +7,32 @@ import './fonts/RubikBubbles-Regular.ttf';
 
 function App() {
   const [dogs, setDogs] = useState([]);
+  const [toggleFilter, setToggleFilter] = useState('');
 
   const refreshDogs = () => {
     fetch('http://localhost:3000/dogs', {
       method: 'GET',
     })
       .then((response) => response.json())
-      .then((updatedDogs) => setDogs(updatedDogs))
+      .then((dogs) => setDogs(dogs))
       .catch(console.error);
   };
 
   useEffect(() => {
     refreshDogs();
   }, []);
+
+  const filteredDogs = dogs.filter((dog) => {
+    if (toggleFilter === '') {
+      return true 
+    } 
+    if (toggleFilter === 'favorites') {
+      return dog.isFavorite
+    } if (toggleFilter === 'notFavorites') {
+      return !dog.isFavorite
+    }
+  })
+
 
   const favoriteDog = (dogId) => {
     fetch(`http://localhost:3000/dogs/${dogId}`, {
@@ -58,7 +71,6 @@ function App() {
   };
 
   //insert create dog function
-  // post request to create a dog
 
   return (
     <div className="App">
@@ -68,12 +80,15 @@ function App() {
       <Section
         dogs={dogs}
         setDogs={setDogs}
+        setToggleFilter={setToggleFilter}
+        set
         refreshDogs={refreshDogs}
         label={'Dogs: '}
       >
         <Dogs
           dogs={dogs}
           setDogs={setDogs}
+          filteredDogs={filteredDogs}
           refreshDogs={refreshDogs}
           favoriteDog={favoriteDog}
           unFavoriteDog={unFavoriteDog}

@@ -22,7 +22,9 @@ export const DogCard = ({
           console.log('Failed to delete item');
         }
       })
-      .catch(console.error)
+      .catch((error) => {
+        console.error('Error deleting item', error);
+      });
   };
 
   return (

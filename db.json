@@ -8,38 +8,10 @@
       "id": 3
     },
     {
-      "name": "Maurice",
-      "image": "/src/assets/cowardly.png",
-      "description": "bandwidth er Analyst envisioneer Guiana",
-      "isFavorite": false,
-      "id": 4
-    },
-    {
-      "name": "Lucas",
-      "image": "/src/assets/cowardly.png",
-      "description": "synergistic invoice Convertible Internal Lead",
-      "isFavorite": false,
-      "id": 5
-    },
-    {
-      "name": "Dean",
-      "image": "/src/assets/boxer.png",
-      "description": "South Jewelery insurance Northwest Jazz",
-      "isFavorite": false,
-      "id": 6
-    },
-    {
-      "name": "Mariam",
-      "image": "/src/assets/boxer.png",
-      "description": "web Kenton Bugatti Engineer Hop OCR Lamborghini Road",
-      "isFavorite": false,
-      "id": 7
-    },
-    {
       "name": "Hallie",
       "image": "/src/assets/blue-heeler.png",
       "description": "neural Developer purple array Electric",
-      "isFavorite": true,
+      "isFavorite": false,
       "id": 8
     },
     {
@@ -53,35 +25,35 @@
       "name": "Orlando",
       "image": "/src/assets/blue-heeler.png",
       "description": "Account male beneath pariatur Streamlined",
-      "isFavorite": true,
+      "isFavorite": false,
       "id": 10
     },
     {
       "name": "Orville",
       "image": "/src/assets/boxer.png",
       "description": "Zambia Electronic Metrics Southeast Supervisor",
-      "isFavorite": false,
+      "isFavorite": true,
       "id": 11
     },
     {
       "name": "Damian",
       "image": "/src/assets/cowardly.png",
       "description": "Bedfordshire Transexual Southwest Alabama keen leverage communities",
-      "isFavorite": false,
+      "isFavorite": true,
       "id": 12
     },
     {
       "name": "Kaya",
       "image": "/src/assets/boxer.png",
       "description": "bandwidth Somalia gah panel bypass",
-      "isFavorite": false,
+      "isFavorite": true,
       "id": 13
     },
     {
       "name": "Luciano",
       "image": "/src/assets/boxer.png",
       "description": "South Movies Diesel Macao Practical Bedfordshire generating itaque",
-      "isFavorite": true,
+      "isFavorite": false,
       "id": 14
     },
     {

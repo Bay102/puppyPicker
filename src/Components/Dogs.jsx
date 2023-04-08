@@ -1,11 +1,11 @@
 // import { useEffect, useState } from 'react';
 import { DogCard } from './DogCard';
 
-export const Dogs = ({ dogs, setDogs, refreshDogs, favoriteDog, unFavoriteDog }) => {
+export const Dogs = ({ dogs, filteredDogs , setDogs, refreshDogs, favoriteDog, unFavoriteDog }) => {
 
   return (
     <>
-      {dogs.map((dog) => (
+      {filteredDogs.map((dog) => (
         <DogCard
           dogs={dogs}
           setDogs={setDogs}
