@@ -24,15 +24,15 @@ function App() {
 
   const filteredDogs = dogs.filter((dog) => {
     if (toggleFilter === '') {
-      return true 
-    } 
-    if (toggleFilter === 'favorites') {
-      return dog.isFavorite
-    } if (toggleFilter === 'notFavorites') {
-      return !dog.isFavorite
+      return true;
     }
-  })
-
+    if (toggleFilter === 'favorites') {
+      return dog.isFavorite;
+    }
+    if (toggleFilter === 'notFavorites') {
+      return !dog.isFavorite;
+    }
+  });
 
   const favoriteDog = (dogId) => {
     fetch(`http://localhost:3000/dogs/${dogId}`, {
@@ -80,6 +80,7 @@ function App() {
       <Section
         dogs={dogs}
         setDogs={setDogs}
+        toggleFilter={toggleFilter}
         setToggleFilter={setToggleFilter}
         set
         refreshDogs={refreshDogs}

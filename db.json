@@ -4,14 +4,14 @@
       "name": "Lorine",
       "image": "/src/assets/boxer.png",
       "description": "dolorum Unbranded Waldorf alongside South Flat Tools orange",
-      "isFavorite": false,
+      "isFavorite": true,
       "id": 3
     },
     {
       "name": "Hallie",
       "image": "/src/assets/blue-heeler.png",
       "description": "neural Developer purple array Electric",
-      "isFavorite": false,
+      "isFavorite": true,
       "id": 8
     },
     {
@@ -32,7 +32,7 @@
       "name": "Orville",
       "image": "/src/assets/boxer.png",
       "description": "Zambia Electronic Metrics Southeast Supervisor",
-      "isFavorite": true,
+      "isFavorite": false,
       "id": 11
     },
     {
@@ -46,7 +46,7 @@
       "name": "Kaya",
       "image": "/src/assets/boxer.png",
       "description": "bandwidth Somalia gah panel bypass",
-      "isFavorite": true,
+      "isFavorite": false,
       "id": 13
     },
     {
