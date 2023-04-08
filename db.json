@@ -15,25 +15,11 @@
       "id": 8
     },
     {
-      "name": "Stanton",
-      "image": "/src/assets/dalmation.png",
-      "description": "quantify website Home Green Hatchback incubate Hybrid",
-      "isFavorite": false,
-      "id": 9
-    },
-    {
       "name": "Orlando",
       "image": "/src/assets/blue-heeler.png",
       "description": "Account male beneath pariatur Streamlined",
       "isFavorite": false,
       "id": 10
-    },
-    {
-      "name": "Orville",
-      "image": "/src/assets/boxer.png",
-      "description": "Zambia Electronic Metrics Southeast Supervisor",
-      "isFavorite": false,
-      "id": 11
     },
     {
       "name": "Damian",
@@ -50,13 +36,6 @@
       "id": 13
     },
     {
-      "name": "Luciano",
-      "image": "/src/assets/boxer.png",
-      "description": "South Movies Diesel Macao Practical Bedfordshire generating itaque",
-      "isFavorite": false,
-      "id": 14
-    },
-    {
       "name": "Ernestine",
       "image": "/src/assets/corgi.png",
       "description": "meh Steel indexing Tesla supposing earum Bicycle",
@@ -67,7 +46,7 @@
       "name": "Zion",
       "image": "/src/assets/boxer.png",
       "description": "Card lest invoice strategize ASCII",
-      "isFavorite": false,
+      "isFavorite": true,
       "id": 16
     },
     {
@@ -81,7 +60,7 @@
       "name": "Mayra",
       "image": "/src/assets/blue-heeler.png",
       "description": "female Clothing Missouri adept Taunton blue transmitter Strontium",
-      "isFavorite": false,
+      "isFavorite": true,
       "id": 18
     },
     {

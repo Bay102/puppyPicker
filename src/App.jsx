@@ -31,6 +31,8 @@ function App() {
     }
     if (toggleFilter === 'notFavorites') {
       return !dog.isFavorite;
+    } if (toggleFilter === 'createDog') {
+      return false
     }
   });
 
@@ -67,7 +69,7 @@ function App() {
           refreshDogs();
         }
       })
-      .catch((error) => console.log(error));
+      .catch(console.error);
   };
 
   //insert create dog function
