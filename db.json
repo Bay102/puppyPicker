@@ -1,74 +1,95 @@
 {
   "dogs": [
     {
-      "name": "Lorine",
-      "image": "/src/assets/boxer.png",
-      "description": "dolorum Unbranded Waldorf alongside South Flat Tools orange",
-      "isFavorite": true,
+      "name": "Reva",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "loyally Modern Cruiser Metal Corporate lime Northeast",
+      "isFavorite": false,
+      "id": 1
+    },
+    {
+      "name": "Dan",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "Oro International and payment Movies Diesel virtual parsing",
+      "isFavorite": false,
+      "id": 2
+    },
+    {
+      "name": "Abagail",
+      "image": "/src/assets/chihuahua.avif",
+      "description": "grey unhappy Handmade Nitrogen Philadelphia considering calculating",
+      "isFavorite": false,
       "id": 3
     },
     {
-      "name": "Hallie",
-      "image": "/src/assets/blue-heeler.png",
-      "description": "neural Developer purple array Electric",
-      "isFavorite": true,
-      "id": 8
-    },
-    {
-      "name": "Orlando",
-      "image": "/src/assets/blue-heeler.png",
-      "description": "Account male beneath pariatur Streamlined",
+      "name": "Paolo",
+      "image": "/src/assets/corgi.png",
+      "description": "eggplant ha pink curtail fuchsia",
       "isFavorite": false,
-      "id": 10
+      "id": 4
     },
     {
-      "name": "Damian",
-      "image": "/src/assets/cowardly.png",
-      "description": "Bedfordshire Transexual Southwest Alabama keen leverage communities",
-      "isFavorite": true,
-      "id": 12
+      "name": "Elmo",
+      "image": "/src/assets/dalmation.png",
+      "description": "Minivan online Keeling Bugatti Jeep",
+      "isFavorite": false,
+      "id": 5
     },
     {
-      "name": "Kaya",
-      "image": "/src/assets/boxer.png",
-      "description": "bandwidth Somalia gah panel bypass",
+      "name": "Estelle",
+      "image": "/src/assets/dalmation.png",
+      "description": "Sedan Bicycle support error Zirconium West Ouguiya Gloves",
       "isFavorite": false,
       "id": 13
     },
     {
-      "name": "Ernestine",
+      "name": "Elvis",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "synergy ivory Rolls Product Androgynous lumen cyan",
+      "isFavorite": true,
+      "id": 14
+    },
+    {
+      "name": "Sydnee",
       "image": "/src/assets/corgi.png",
-      "description": "meh Steel indexing Tesla supposing earum Bicycle",
-      "isFavorite": false,
+      "description": "Beaverton Gasoline Luxurious pixel compress",
+      "isFavorite": true,
       "id": 15
     },
     {
-      "name": "Zion",
-      "image": "/src/assets/boxer.png",
-      "description": "Card lest invoice strategize ASCII",
+      "name": "Martine",
+      "image": "/src/assets/dalmation.png",
+      "description": "Pop Rutherfordium Cheese innovative violet seamless mollitia coulomb",
       "isFavorite": true,
       "id": 16
     },
     {
-      "name": "Alexie",
+      "name": "Hector",
       "image": "/src/assets/chihuahua.avif",
-      "description": "Personal Quality District Gleichner nicely female dolor Manganese",
+      "description": "invoice purple OCR hmph Home Director Modesto deposit",
       "isFavorite": true,
       "id": 17
     },
     {
-      "name": "Mayra",
-      "image": "/src/assets/blue-heeler.png",
-      "description": "female Clothing Missouri adept Taunton blue transmitter Strontium",
+      "name": "Vivian",
+      "image": "/src/assets/corgi.png",
+      "description": "reboot red payment ASCII API next Rock parsing",
       "isFavorite": true,
       "id": 18
     },
     {
-      "name": "Reginald",
-      "image": "/src/assets/blue-heeler.png",
-      "description": "strategy up sievert East Wooden Advanced joshingly HDD",
-      "isFavorite": false,
+      "name": "Libbie",
+      "image": "/src/assets/corgi.png",
+      "description": "what Dinar Savings Refined Granite Cotton Michigan South",
+      "isFavorite": true,
       "id": 19
+    },
+    {
+      "name": "Charlie",
+      "image": "/src/assets/cowardly.png",
+      "description": "Charlie is a good boy ",
+      "isFavorite": false,
+      "id": 20
     }
   ]
 }

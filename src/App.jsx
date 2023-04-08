@@ -31,8 +31,9 @@ function App() {
     }
     if (toggleFilter === 'notFavorites') {
       return !dog.isFavorite;
-    } if (toggleFilter === 'createDog') {
-      return false
+    }
+    if (toggleFilter === 'createDog') {
+      return false;
     }
   });
 
@@ -72,7 +73,23 @@ function App() {
       .catch(console.error);
   };
 
-  //insert create dog function
+  const addDog = (name, image, description) => {
+    fetch('http://localhost:3000/dogs', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: name,
+        image: image,
+        description: description,
+        isFavorite: false,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch(console.error);
+  };
 
   return (
     <div className="App">
@@ -97,7 +114,7 @@ function App() {
           unFavoriteDog={unFavoriteDog}
           label={'All Dogs'}
         />
-        {/* <CreateDogForm /> */}
+        {toggleFilter === 'createDog' && <CreateDogForm addDog={addDog} />}
       </Section>
     </div>
   );

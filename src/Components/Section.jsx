@@ -14,16 +14,12 @@ export const Section = ({
       <div className="container-header">
         <div className="container-label">{label}</div>
         <div className="selectors">
-          {/* Add the class 'active' to any selector in order to make it's color change */}
-          {/* This should display the favorite count */}
           <div
             onClick={() => setToggleFilter('favorites')}
             className={`selector ${toggleFilter === 'favorites' ? 'active' : ''}`}
           >
             favorites( {favoriteDogCount} )
           </div>
-
-          {/* This should display the un-favorite count */}
           <div
             onClick={() => setToggleFilter('notFavorites')}
             className={`selector ${toggleFilter === 'notFavorites' ? 'active' : ''}`}
