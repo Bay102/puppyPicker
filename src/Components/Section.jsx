@@ -1,10 +1,4 @@
-export const Section = ({
-  dogs,
-  toggleFilter,
-  setToggleFilter,
-  label,
-  children,
-}) => {
+export const Section = ({ dogs, filter, setFilter, label, children }) => {
   const favoriteDogCount = dogs.filter((dog) => dog.isFavorite).length;
 
   const notFavoriteDogCount = dogs.filter((dog) => !dog.isFavorite).length;
@@ -15,18 +9,25 @@ export const Section = ({
         <div className="container-label">{label}</div>
         <div className="selectors">
           <div
-            onClick={() => setToggleFilter('favorites')}
-            className={`selector ${toggleFilter === 'favorites' ? 'active' : ''}`}
+            onClick={() =>
+              filter === 'favorites' ? setFilter('') : setFilter('favorites')
+            }
+            className={`selector ${filter === 'favorites' ? 'active' : ''}`}
           >
             favorites( {favoriteDogCount} )
           </div>
           <div
-            onClick={() => setToggleFilter('notFavorites')}
-            className={`selector ${toggleFilter === 'notFavorites' ? 'active' : ''}`}
+            onClick={() =>
+              filter === 'notFavorites' ? setFilter('') : setFilter('notFavorites')
+            }
+            className={`selector ${filter === 'notFavorites' ? 'active' : ''}`}
           >
             un-favorite ({notFavoriteDogCount})
           </div>
-          <div onClick={() => setToggleFilter('createDog')} className={`selector`}>
+          <div
+            onClick={() => setFilter('createDog')}
+            className={`selector ${filter === 'createDog' ? 'active' : ''}`}
+          >
             create dog
           </div>
         </div>

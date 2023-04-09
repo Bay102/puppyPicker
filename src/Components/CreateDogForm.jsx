@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { dogPictures } from '../assets/dog-pictures';
 
-export const CreateDogForm = ({ addDog }) => {
+export const CreateDogForm = ({ addDog, refreshDogs }) => {
   const [selectedImage, setSelectedImage] = useState(dogPictures.BlueHeeler);
   const [dogName, setDogName] = useState('');
   const [description, setDescription] = useState('');
@@ -13,13 +13,22 @@ export const CreateDogForm = ({ addDog }) => {
       onSubmit={(e) => {
         e.preventDefault();
         addDog(dogName, selectedImage, description);
+        setDogName('');
+        setDescription('');
+        setSelectedImage(dogPictures.BlueHeeler);
+        refreshDogs();
       }}
     >
       <h4>Create a New Dog</h4>
       <label htmlFor="name">Dog Name</label>
-      <input type="text" onChange={(e) => setDogName(e.target.value)} />
+      <input
+        type="text"
+        value={dogName}
+        onChange={(e) => setDogName(e.target.value)}
+      />
       <label htmlFor="description">Dog Description</label>
       <textarea
+        value={description}
         name=""
         id=""
         cols="80"
@@ -28,6 +37,7 @@ export const CreateDogForm = ({ addDog }) => {
       ></textarea>
       <label htmlFor="picture">Select an Image</label>
       <select
+      value={selectedImage}
         id=""
         onChange={(e) => {
           setSelectedImage(e.target.value);

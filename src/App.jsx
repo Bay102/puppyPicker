@@ -7,7 +7,7 @@ import './fonts/RubikBubbles-Regular.ttf';
 
 function App() {
   const [dogs, setDogs] = useState([]);
-  const [toggleFilter, setToggleFilter] = useState('');
+  const [filter, setFilter] = useState('');
 
   const refreshDogs = () => {
     fetch('http://localhost:3000/dogs', {
@@ -23,16 +23,16 @@ function App() {
   }, []);
 
   const filteredDogs = dogs.filter((dog) => {
-    if (toggleFilter === '') {
+    if (filter === '') {
       return true;
     }
-    if (toggleFilter === 'favorites') {
+    if (filter === 'favorites') {
       return dog.isFavorite;
     }
-    if (toggleFilter === 'notFavorites') {
+    if (filter === 'notFavorites') {
       return !dog.isFavorite;
     }
-    if (toggleFilter === 'createDog') {
+    if (filter === 'createDog') {
       return false;
     }
   });
@@ -87,7 +87,11 @@ function App() {
       }),
     })
       .then((response) => response.json())
-      .then((data) => console.log(data))
+      .then((response) => {
+        if (response.ok) {
+          refreshDogs()
+        }
+      })
       .catch(console.error);
   };
 
@@ -99,8 +103,8 @@ function App() {
       <Section
         dogs={dogs}
         setDogs={setDogs}
-        toggleFilter={toggleFilter}
-        setToggleFilter={setToggleFilter}
+        filter={filter}
+        setFilter={setFilter}
         set
         refreshDogs={refreshDogs}
         label={'Dogs: '}
@@ -114,7 +118,7 @@ function App() {
           unFavoriteDog={unFavoriteDog}
           label={'All Dogs'}
         />
-        {toggleFilter === 'createDog' && <CreateDogForm addDog={addDog} />}
+        {filter === 'createDog' && <CreateDogForm addDog={addDog} refreshDogs={refreshDogs} />}
       </Section>
     </div>
   );

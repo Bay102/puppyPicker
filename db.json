@@ -1,94 +1,150 @@
 {
   "dogs": [
     {
-      "name": "Reva",
-      "image": "/src/assets/blue-heeler.png",
-      "description": "loyally Modern Cruiser Metal Corporate lime Northeast",
+      "name": "Alvis",
+      "image": "/src/assets/boxer.png",
+      "description": "newton Hybrid until Funk SUV",
       "isFavorite": false,
+      "id": 0
+    },
+    {
+      "name": "Rasheed",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "unacceptable Customer strategize Hyundai algorithm Incredible parsing",
+      "isFavorite": true,
       "id": 1
     },
     {
-      "name": "Dan",
-      "image": "/src/assets/blue-heeler.png",
-      "description": "Oro International and payment Movies Diesel virtual parsing",
-      "isFavorite": false,
+      "name": "Skyla",
+      "image": "/src/assets/corgi.png",
+      "description": "salmon Officer projection becquerel specifically Toyota auxiliary",
+      "isFavorite": true,
       "id": 2
     },
     {
-      "name": "Abagail",
-      "image": "/src/assets/chihuahua.avif",
-      "description": "grey unhappy Handmade Nitrogen Philadelphia considering calculating",
-      "isFavorite": false,
+      "name": "Obie",
+      "image": "/src/assets/dalmation.png",
+      "description": "SUV Idaho East aha Virtual Loan support Bike",
+      "isFavorite": true,
       "id": 3
     },
     {
-      "name": "Paolo",
-      "image": "/src/assets/corgi.png",
-      "description": "eggplant ha pink curtail fuchsia",
-      "isFavorite": false,
+      "name": "Jarred",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "sky methodologies purple Gasoline Ohio turquoise bypassing",
+      "isFavorite": true,
       "id": 4
     },
     {
-      "name": "Elmo",
-      "image": "/src/assets/dalmation.png",
-      "description": "Minivan online Keeling Bugatti Jeep",
-      "isFavorite": false,
+      "name": "Madelynn",
+      "image": "/src/assets/cowardly.png",
+      "description": "kelvin East orange Account Computer Fundamental female input",
+      "isFavorite": true,
       "id": 5
     },
     {
-      "name": "Estelle",
-      "image": "/src/assets/dalmation.png",
-      "description": "Sedan Bicycle support error Zirconium West Ouguiya Gloves",
+      "name": "Kattie",
+      "image": "/src/assets/cowardly.png",
+      "description": "ipsum Mississippi Fresh Account female",
+      "isFavorite": true,
+      "id": 6
+    },
+    {
+      "name": "Antonetta",
+      "image": "/src/assets/corgi.png",
+      "description": "Passenger Sausages copy Mauritius grey foolishly meter",
       "isFavorite": false,
+      "id": 7
+    },
+    {
+      "name": "Rory",
+      "image": "/src/assets/corgi.png",
+      "description": "Gasoline withdrawal Expanded Miami female portal Southwest devoice",
+      "isFavorite": true,
+      "id": 8
+    },
+    {
+      "name": "Jimmy",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "female super South Regional Tricycle reboot Heard",
+      "isFavorite": true,
+      "id": 9
+    },
+    {
+      "name": "Jessy",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "Principal Hybrid Gasoline International Wooden",
+      "isFavorite": false,
+      "id": 10
+    },
+    {
+      "name": "Albertha",
+      "image": "/src/assets/boxer.png",
+      "description": "RSS Roseville withdrawal Wooden Outdoors",
+      "isFavorite": false,
+      "id": 11
+    },
+    {
+      "name": "Louie",
+      "image": "/src/assets/corgi.png",
+      "description": "Island scale Californium Kannapolis tangible East Zieme",
+      "isFavorite": false,
+      "id": 12
+    },
+    {
+      "name": "Virgil",
+      "image": "/src/assets/chihuahua.avif",
+      "description": "Investor orange amidst Well Clothing payment Vernon Hendersonville",
+      "isFavorite": true,
       "id": 13
     },
     {
-      "name": "Elvis",
-      "image": "/src/assets/blue-heeler.png",
-      "description": "synergy ivory Rolls Product Androgynous lumen cyan",
+      "name": "Danielle",
+      "image": "/src/assets/boxer.png",
+      "description": "Manager bah cottage Director generate even Sausages",
       "isFavorite": true,
       "id": 14
     },
     {
-      "name": "Sydnee",
-      "image": "/src/assets/corgi.png",
-      "description": "Beaverton Gasoline Luxurious pixel compress",
-      "isFavorite": true,
+      "name": "Kristian",
+      "image": "/src/assets/dalmation.png",
+      "description": "Southeast Ferrari foretell dynamic copy",
+      "isFavorite": false,
       "id": 15
     },
     {
-      "name": "Martine",
-      "image": "/src/assets/dalmation.png",
-      "description": "Pop Rutherfordium Cheese innovative violet seamless mollitia coulomb",
-      "isFavorite": true,
+      "name": "Astrid",
+      "image": "/src/assets/corgi.png",
+      "description": "solutions integrated South generously generating",
+      "isFavorite": false,
       "id": 16
     },
     {
-      "name": "Hector",
-      "image": "/src/assets/chihuahua.avif",
-      "description": "invoice purple OCR hmph Home Director Modesto deposit",
+      "name": "Kaia",
+      "image": "/src/assets/cowardly.png",
+      "description": "withdrawal Computers plus Music Intelligent Legacy alive hacking",
       "isFavorite": true,
       "id": 17
     },
     {
-      "name": "Vivian",
-      "image": "/src/assets/corgi.png",
-      "description": "reboot red payment ASCII API next Rock parsing",
+      "name": "Lee",
+      "image": "/src/assets/dalmation.png",
+      "description": "XML bogus Enhanced Developer farad to invoice",
       "isFavorite": true,
       "id": 18
     },
     {
-      "name": "Libbie",
-      "image": "/src/assets/corgi.png",
-      "description": "what Dinar Savings Refined Granite Cotton Michigan South",
-      "isFavorite": true,
+      "name": "Jeromy",
+      "image": "/src/assets/cowardly.png",
+      "description": "Metal Personal Paradigm VGA Wooden female Pants",
+      "isFavorite": false,
       "id": 19
     },
     {
-      "name": "Charlie",
-      "image": "/src/assets/cowardly.png",
-      "description": "Charlie is a good boy ",
-      "isFavorite": false,
+      "name": "charles ",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "charlie is a good boy ",
+      "isFavorite": true,
       "id": 20
     }
   ]
